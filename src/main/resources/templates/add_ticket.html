@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Добавить билет</title>
+</head>
+<body>
+<form action="/add_ticket" method="post">
+    <input type="hidden" name="userId" th:attr="value=${userId}">
+
+    <p>Введите наименование вещи</p>
+    <input type="text" name="goodName">
+
+    <p>Цена вещи</p>
+    <input type="text" name="goodPrice">
+
+    <p>Введите колличество дней</p>
+    <input type="text" name="pledgeDays"><br><br>
+
+    <input type="submit" value="Заложить">
+</form>
+</body>
+</html>

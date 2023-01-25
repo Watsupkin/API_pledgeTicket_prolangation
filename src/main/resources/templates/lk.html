@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>Личный кабинет</title>
+</head>
+<body>
+<p>Ломбард №1 - залог и продление</p>
+  <p th:text="'Здравствуйте, ' + ${user.login}"></p>
+
+  <a th:href="'/tickets/' + ${user.id}">Мои залоговые билеты</a><br><br>
+
+<a th:href="'/add_ticket/' + ${user.id}">Заложить вещь</a><br><br>
+
+  <a th:href="'/exit'">Выйти</a>
+</body>
+</html>

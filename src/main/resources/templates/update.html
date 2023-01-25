@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Обновить</title>
+</head>
+<body>
+    <form action="/update" method="post">
+        <p>На какое колличество дней хотие увеличит срок хранения?</p>
+        <p>(для уменьшения дней введите с минусом)</p>
+        <input type="hidden" name="ticketId" th:attr="value=${ticketId}">
+        <input type="text" name="days"><br><br>
+        <input type="submit" value="пролангировать">
+    </form>
+</body>
+</html>
